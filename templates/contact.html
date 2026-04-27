@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Rangoato Law Institute</title>
+  <meta name="description" content="Get in touch with Rangoato Law Institute. Book a consultation, ask a question, or discuss your matter with our legal team in Johannesburg."/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../static/css/main.css"/>
+  <link rel="stylesheet" href="../static/css/contact.css"/>
+  <link rel="stylesheet" href="../static/css/about.css"/>
+</head>
+<body>
+
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <!-- ── NAV ───────────────────────────────────────────────── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="../static/img/logo.png" alt="Rangoato Law Institute" class="nav-logo-img"/>
+      <div class="nav-logo-text">
+        Rangoato Law Institute
+        <span class="nav-logo-sub">Resolution Driven</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html#book" class="nav-cta"><span>Book Consultation</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"    onclick="closeDrawer()">Home</a>
+    <a href="services.html" onclick="closeDrawer()">Services</a>
+    <a href="about.html"    onclick="closeDrawer()">About</a>
+    <a href="contact.html"  onclick="closeDrawer()">Contact</a>
+    <a href="contact.html#book" class="drawer-cta" onclick="closeDrawer()">Book Consultation</a>
+  </div>
+
+  <!-- ── CONTACT MAIN ───────────────────────────────────────── -->
+  <main class="contact-main">
+
+    <!-- ── HERO STRIP ──────────────────────────────────────── -->
+    <div class="contact-hero">
+      <div class="page-hero-bg" style="
+      background-image: url('../static/img/contact-hero.jpg');
+      background-color: var(--deep);
+    "></div>
+      <div class="contact-hero-inner">
+        <div class="contact-hero-left">
+          <div class="page-breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <span>Contact</span>
+          </div>
+          <h1 class="page-hero-title" style="font-size: clamp(2.2rem, 4.5vw, 4rem); margin-top: 0.8rem;">
+            Let's talk about<br>
+            <em>your matter.</em>
+          </h1>
+        </div>
+        <div class="contact-hero-right">
+          <div class="contact-status">
+            <div class="status-dot"></div>
+            Currently accepting new clients
+          </div>
+          <div class="contact-working-hours">
+            Mon – Fri &nbsp;·&nbsp; 08:00 – 17:00 SAST
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MAIN GRID ───────────────────────────────────────── -->
+    <div class="contact-grid">
+
+      <!-- ── SIDEBAR ──────────────────────────────────────── -->
+      <aside class="contact-sidebar">
+
+        <!-- Contact Details -->
+        <div>
+          <p class="info-block-title">Contact Details</p>
+          <div class="info-list">
+            <a class="info-item" href="tel:+270000000000">
+              <div class="info-item-icon"><i class="ri-phone-line"></i></div>
+              <div class="info-item-text">
+                <div class="info-item-label">Phone</div>
+                <div class="info-item-value">+27 (0) 00 000 0000</div>
+              </div>
+            </a>
+            <a class="info-item" href="mailto:info@rangoatolaw.co.za">
+              <div class="info-item-icon"><i class="ri-mail-line"></i></div>
+              <div class="info-item-text">
+                <div class="info-item-label">Email</div>
+                <div class="info-item-value">info@rangoatolaw.co.za</div>
+              </div>
+            </a>
+            <div class="info-item" style="cursor:default;">
+              <div class="info-item-icon"><i class="ri-map-pin-2-line"></i></div>
+              <div class="info-item-text">
+                <div class="info-item-label">Office</div>
+                <div class="info-item-value">Johannesburg, Gauteng<br>South Africa</div>
+              </div>
+            </div>
+            <div class="info-item" style="cursor:default;">
+              <div class="info-item-icon"><i class="ri-time-line"></i></div>
+              <div class="info-item-text">
+                <div class="info-item-label">Office Hours</div>
+                <div class="info-item-value">Mon – Fri: 08:00 – 17:00<br>
+                  <span style="font-size:0.78rem; color:var(--muted);">Sat by appointment only</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div>
+          <p class="info-block-title">Location</p>
+          <div class="office-map">
+            <div class="office-map-pin">
+              <i class="ri-map-pin-line"></i>
+            </div>
+            <div class="office-map-label">Johannesburg, Gauteng</div>
+            <a href="https://maps.google.com/?q=Johannesburg+South+Africa" target="_blank" class="office-map-link">
+              <i class="ri-external-link-line"></i> Open in Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Socials -->
+        <div>
+          <p class="info-block-title">Follow Us</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter / X"><i class="ri-twitter-x-line"></i></a>
+            <a href="mailto:info@rangoatolaw.co.za" class="social-btn" aria-label="Email"><i class="ri-mail-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <p style="font-size: 0.7rem; color: var(--muted); line-height: 1.65; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+          <i class="ri-shield-check-line" style="color:var(--gold-dim); margin-right:0.3rem;"></i>
+          All enquiries are treated with strict confidentiality. Sending this form does not create
+          an attorney-client relationship. A consultation must be formally agreed upon.
+        </p>
+
+      </aside>
+
+      <!-- ── FORM AREA ─────────────────────────────────────── -->
+      <div class="contact-form-area" id="book">
+
+        <h2 class="form-heading reveal">
+          Book a<br><em>Consultation.</em>
+        </h2>
+        <p class="form-subheading reveal reveal-delay-1">
+          Tell us about your matter and we'll get back to you within one business day to
+          schedule a consultation at a time that suits you.
+        </p>
+
+        <!-- Service Selector -->
+        <div class="form-service-select reveal reveal-delay-2">
+          <label class="service-opt">
+            <input type="radio" name="service" value="employment" checked/>
+            <span class="service-opt-label">
+              <i class="ri-briefcase-line"></i> Employment
+            </span>
+          </label>
+          <label class="service-opt">
+            <input type="radio" name="service" value="insurance"/>
+            <span class="service-opt-label">
+              <i class="ri-shield-check-line"></i> Insurance
+            </span>
+          </label>
+          <label class="service-opt">
+            <input type="radio" name="service" value="matrimonial"/>
+            <span class="service-opt-label">
+              <i class="ri-heart-3-line"></i> Matrimonial
+            </span>
+          </label>
+          <label class="service-opt">
+            <input type="radio" name="service" value="delictual"/>
+            <span class="service-opt-label">
+              <i class="ri-file-damage-line"></i> Delictual
+            </span>
+          </label>
+          <label class="service-opt">
+            <input type="radio" name="service" value="contracts"/>
+            <span class="service-opt-label">
+              <i class="ri-file-text-line"></i> Contracts
+            </span>
+          </label>
+          <label class="service-opt">
+            <input type="radio" name="service" value="other"/>
+            <span class="service-opt-label">
+              <i class="ri-more-line"></i> Other
+            </span>
+          </label>
+        </div>
+
+        <!-- Form -->
+        <div id="consultationFormWrap" class="reveal reveal-delay-3">
+          <div class="consultation-form" id="consultationForm">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name"/>
+              </div>
+              <div class="form-field" style="border-left:none;">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name"/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email"/>
+                <i class="ri-mail-line form-field-icon"></i>
+              </div>
+              <div class="form-field" style="border-left:none;">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000" autocomplete="tel"/>
+                <i class="ri-phone-line form-field-icon"></i>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Matter Summary</label>
+              <input type="text" id="subject" name="subject" placeholder="Brief one-line description of your matter"/>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Details</label>
+              <textarea id="message" name="message" placeholder="Please describe your matter in more detail. Include any relevant dates, parties involved, or urgency..."></textarea>
+            </div>
+
+            <!-- Preferred contact time -->
+            <div class="time-select">
+              <div class="time-opt">
+                <input type="radio" id="timeMorning" name="preferredTime" value="morning" checked/>
+                <label for="timeMorning"><i class="ri-sun-line"></i> Morning</label>
+              </div>
+              <div class="time-opt">
+                <input type="radio" id="timeAfternoon" name="preferredTime" value="afternoon"/>
+                <label for="timeAfternoon"><i class="ri-sun-foggy-line"></i> Afternoon</label>
+              </div>
+              <div class="time-opt">
+                <input type="radio" id="timeAnytime" name="preferredTime" value="anytime"/>
+                <label for="timeAnytime"><i class="ri-time-line"></i> Anytime</label>
+              </div>
+            </div>
+
+            <!-- Urgency toggle -->
+            <div class="urgency-row">
+              <div class="urgency-label">
+                <span class="urgency-title">This matter is urgent</span>
+                <span class="urgency-subtitle">We'll prioritise your enquiry</span>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="urgentToggle" name="urgent"/>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <!-- Footer row -->
+            <div class="form-footer">
+              <div class="form-footer-note">
+                <i class="ri-lock-2-line"></i>
+                Strictly confidential. Your information is never shared.
+              </div>
+              <button class="btn-submit" id="submitBtn" onclick="handleSubmit(event)">
+                Send Enquiry <i class="ri-send-plane-line"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Success message -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon"><i class="ri-check-line"></i></div>
+            <div class="success-title">Enquiry Received</div>
+            <p class="success-text">
+              Thank you for contacting Rangoato Law Institute. We'll review your matter
+              and get back to you within one business day to arrange a consultation.
+            </p>
+            <a href="index.html" class="btn-ghost" style="margin-top: 0.5rem;">Return to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── CONSULTATION PROCESS ─────────────────────────────── -->
+    <section class="book-section" id="process">
+      <div class="book-text">
+        <p class="section-label reveal">How it works</p>
+        <h2 class="section-title reveal reveal-delay-1">
+          Your consultation,<br>
+          <em>step by step.</em>
+        </h2>
+        <p class="section-body reveal reveal-delay-2" style="margin-top: 1rem; max-width: 380px;">
+          We've designed a clear, efficient process so you know exactly what to expect
+          from the moment you reach out.
+        </p>
+      </div>
+      <div class="book-steps">
+        <div class="book-step reveal">
+          <div class="book-step-num">01</div>
+          <div>
+            <div class="book-step-title">Submit Your Enquiry</div>
+            <div class="book-step-desc">
+              Complete the contact form above with details about your matter. Include any
+              relevant dates, urgency, or specific questions you have for our team.
+            </div>
+          </div>
+        </div>
+        <div class="book-step reveal reveal-delay-1">
+          <div class="book-step-num">02</div>
+          <div>
+            <div class="book-step-title">Initial Review</div>
+            <div class="book-step-desc">
+              Our team reviews your enquiry within one business day and contacts you to
+              confirm your consultation appointment at a convenient time.
+            </div>
+          </div>
+        </div>
+        <div class="book-step reveal reveal-delay-2">
+          <div class="book-step-num">03</div>
+          <div>
+            <div class="book-step-title">Consultation</div>
+            <div class="book-step-desc">
+              Meet with one of our attorneys to discuss your matter in depth. We'll
+              assess your position honestly and outline your options without obligation.
+            </div>
+          </div>
+        </div>
+        <div class="book-step reveal reveal-delay-3">
+          <div class="book-step-num">04</div>
+          <div>
+            <div class="book-step-title">Clear Recommendation</div>
+            <div class="book-step-desc">
+              You receive a clear, written summary of our assessment — including the
+              merits of your matter, recommended approach, and transparent fee structure.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <img src="../static/img/logo.png" alt="Rangoato Law Institute"/>
+          <div class="footer-brand-name">
+            Rangoato Law Institute
+            <span>Resolution Driven</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Tailored legal services across employment, insurance, matrimonial, delictual and contractual matters.
+          Based in Johannesburg, South Africa.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter / X"><i class="ri-twitter-x-line"></i></a>
+          <a href="mailto:info@rangoatolaw.co.za" class="social-btn" aria-label="Email"><i class="ri-mail-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Navigation</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About the Institute</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#book">Book Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Practice Areas</p>
+        <ul>
+          <li><a href="services.html#employment">Employment Relations</a></li>
+          <li><a href="services.html#delictual">Delictual Claims</a></li>
+          <li><a href="services.html#insurance">Insurance Law</a></li>
+          <li><a href="services.html#matrimonial">Matrimonial Disputes</a></li>
+          <li><a href="services.html#contracts">Contractual Matters</a></li>
+          <li><a href="services.html#dispute">Dispute Resolution</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Get In Touch</p>
+        <div class="footer-contact-item">
+          <i class="ri-map-pin-line"></i>
+          <span>Johannesburg, Gauteng<br>South Africa</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ri-phone-line"></i>
+          <span>+27 (0) 00 000 0000</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ri-mail-line"></i>
+          <span>info@rangoatolaw.co.za</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ri-time-line"></i>
+          <span>Mon – Fri: 08:00 – 17:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Rangoato Law Institute. Johannesburg, South Africa. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../static/js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const firstName = document.getElementById('firstName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!firstName || !email || !message) {
+        // Simple shake animation on empty required fields
+        [document.getElementById('firstName').closest('.form-field'),
+         document.getElementById('email').closest('.form-field'),
+         document.getElementById('message').closest('.form-field')
+        ].forEach(el => {
+          if (!el.querySelector('input, textarea').value.trim()) {
+            el.style.borderColor = 'rgba(239,68,68,0.6)';
+            el.style.animation = 'none';
+            el.offsetHeight; // reflow
+          }
+        });
+        return;
+      }
+
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="ri-loader-4-line" style="animation: spin 0.8s linear infinite;"></i> Sending…';
+
+      // Simulate async send
+      setTimeout(() => {
+        document.getElementById('consultationForm').style.display = 'none';
+        document.getElementById('formSuccess').classList.add('show');
+        // Scroll to the success message
+        document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 1400);
+    }
+
+    // Add spinning keyframe dynamically
+    const spinStyle = document.createElement('style');
+    spinStyle.textContent = `@keyframes spin { to { transform: rotate(360deg); } }`;
+    document.head.appendChild(spinStyle);
+  </script>
+</body>
+</html>

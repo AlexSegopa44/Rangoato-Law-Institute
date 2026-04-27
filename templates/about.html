@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Rangoato Law Institute</title>
+  <meta name="description" content="Learn about Rangoato Law Institute — our mission, philosophy, team, and commitment to resolution-driven legal services in Johannesburg."/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../static/css/main.css"/>
+  <link rel="stylesheet" href="../static/css/about.css"/>
+</head>
+<body>
+
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <!-- ── NAV ───────────────────────────────────────────────── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="../static/img/logo.png" alt="Rangoato Law Institute" class="nav-logo-img"/>
+      <div class="nav-logo-text">
+        Rangoato Law Institute
+        <span class="nav-logo-sub">Resolution Driven</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html#book" class="nav-cta"><span>Book Consultation</span></a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"    onclick="closeDrawer()">Home</a>
+    <a href="services.html" onclick="closeDrawer()">Services</a>
+    <a href="about.html"    onclick="closeDrawer()">About</a>
+    <a href="contact.html"  onclick="closeDrawer()">Contact</a>
+    <a href="contact.html#book" class="drawer-cta" onclick="closeDrawer()">Book Consultation</a>
+  </div>
+
+  <!-- ── PAGE HERO ─────────────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="
+      background-image: url('../static/img/about-hero.jpg');
+      background-color: var(--deep);
+    "></div>
+    <div class="page-hero-line"></div>
+    <div class="page-hero-content">
+      <div class="page-breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="ri-arrow-right-s-line"></i>
+        <span>About</span>
+      </div>
+      <h1 class="page-hero-title">
+        More than a law firm.<br>
+        <em>A philosophy.</em>
+      </h1>
+      <p class="page-hero-sub">
+        Rangoato Law Institute was built on the belief that legal disputes are best resolved
+        through strategy, empathy, and efficiency — not courtroom battles that drain
+        resources and relationships.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── MISSION SECTION ───────────────────────────────────── -->
+  <section class="mission-section">
+
+    <div class="mission-visual reveal">
+      <div class="mission-accent-line"></div>
+      <div class="mission-image-frame">
+        <!--
+          ════════════════════════════════════════════════
+          IMAGE PLACEHOLDER — about-office.jpg
+          Drop your photo into static/img/about-office.jpg
+          Recommended: Law office interior / attorney at
+          desk / professional setting. Portrait or 4:5 crop.
+          Min 800 × 1000px.
+          ════════════════════════════════════════════════
+        -->
+        <img src="../static/img/about-office.jpg" alt="Rangoato Law Institute — Our Mission" loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <div style="display:none; position:absolute; inset:0; background:var(--card); flex-direction:column; align-items:center; justify-content:center; gap:0.8rem; border:1px dashed rgba(184,148,42,0.3);">
+          <i class="ri-image-line" style="font-size:3rem; color:var(--gold-dim);"></i>
+          <span style="font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); text-align:center; padding:0 1rem;">about-office.jpg<br>800 × 1000px</span>
+        </div>
+      </div>
+      <div class="mission-corner">
+        <div class="mission-corner-num">6+</div>
+        <div class="mission-corner-label">Practice<br>Areas</div>
+      </div>
+    </div>
+
+    <div class="mission-text">
+      <p class="mission-label reveal">Our Mission</p>
+      <h2 class="mission-heading reveal reveal-delay-1">
+        Outcomes that serve<br>
+        <em>people, not process.</em>
+      </h2>
+      <p class="mission-body reveal reveal-delay-2">
+        At Rangoato Law Institute, we start every matter with an objective assessment
+        of your position. Before a single document is filed, we evaluate your prospects honestly —
+        helping you decide whether to litigate, settle, or defend with full knowledge of the costs,
+        risks, and likely outcomes.
+      </p>
+      <p class="mission-body reveal reveal-delay-3">
+        This approach isn't just ethical — it's practical. Clients who understand their position
+        make better decisions, reach resolution faster, and spend less on legal fees. That's the
+        Rangoato difference.
+      </p>
+
+      <div class="mission-pillars">
+        <div class="pillar-item reveal reveal-delay-1">
+          <i class="ri-scales-3-line"></i>
+          <div class="pillar-label">Objective Assessment</div>
+          <div class="pillar-desc">We evaluate your matter honestly before recommending a path forward.</div>
+        </div>
+        <div class="pillar-item reveal reveal-delay-2">
+          <i class="ri-shake-hands-line"></i>
+          <div class="pillar-label">Resolution First</div>
+          <div class="pillar-desc">We prioritise efficient resolution over prolonged, costly litigation.</div>
+        </div>
+        <div class="pillar-item reveal reveal-delay-3">
+          <i class="ri-user-heart-line"></i>
+          <div class="pillar-label">Client-Centred</div>
+          <div class="pillar-desc">Every strategy is tailored to your specific circumstances and goals.</div>
+        </div>
+        <div class="pillar-item reveal reveal-delay-4">
+          <i class="ri-shield-check-line"></i>
+          <div class="pillar-label">Transparent Counsel</div>
+          <div class="pillar-desc">Clear advice on risks, costs, and realistic outcomes from day one.</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── PHILOSOPHY BANNER ──────────────────────────────────── -->
+  <section class="philosophy-banner">
+    <div class="philosophy-quote-side">
+      <p class="mission-label reveal">Our Philosophy</p>
+      <blockquote class="philosophy-quote reveal reveal-delay-1">
+        Justice is not about winning —<br>
+        it's about <strong>resolution.</strong>
+      </blockquote>
+      <div class="philosophy-attr reveal reveal-delay-2">
+        Rangoato Law Institute — Core Principle
+      </div>
+    </div>
+
+    <div class="philosophy-values">
+      <p class="philosophy-values-title reveal">What We Stand For</p>
+      <ul class="value-list">
+        <li class="value-item reveal reveal-delay-1">
+          <span class="value-num">01</span>
+          <div>
+            <div class="value-name">Aequitas — Fairness</div>
+            <div class="value-desc">Every client deserves an honest appraisal of their matter, regardless of complexity or outcome.</div>
+          </div>
+        </li>
+        <li class="value-item reveal reveal-delay-2">
+          <span class="value-num">02</span>
+          <div>
+            <div class="value-name">Veritas — Truth</div>
+            <div class="value-desc">We provide truthful, evidence-based legal guidance — even when the answer is not what you hoped to hear.</div>
+          </div>
+        </li>
+        <li class="value-item reveal reveal-delay-3">
+          <span class="value-num">03</span>
+          <div>
+            <div class="value-name">Efficacia — Efficiency</div>
+            <div class="value-desc">Time is money. We pursue the most direct path to a just outcome for every client we serve.</div>
+          </div>
+        </li>
+        <li class="value-item reveal reveal-delay-4">
+          <span class="value-num">04</span>
+          <div>
+            <div class="value-name">Integritas — Integrity</div>
+            <div class="value-desc">Our reputation is built on consistently doing what is right for our clients and the justice system.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── TEAM SECTION ───────────────────────────────────────── -->
+  <section class="team-section">
+    <div class="team-header">
+      <div class="team-header-text">
+        <p class="section-label reveal">Our Team</p>
+        <h2 class="section-title reveal reveal-delay-1">The attorneys<br>behind the institute.</h2>
+      </div>
+      <a href="contact.html" class="btn-ghost reveal">Meet with us →</a>
+    </div>
+
+    <div class="team-grid">
+      <!-- Team Member 1 -->
+      <div class="team-card">
+        <!--
+          IMAGE PLACEHOLDER — static/img/team-1.jpg
+          Professional headshot. Plain / office background.
+          Portrait crop, min 600 × 800px.
+        -->
+        <img
+          class="team-card-img"
+          src="../static/img/team-1.jpg"
+          alt="Adv. K. Rangoato"
+          loading="lazy"
+          onerror="this.outerHTML='<div class=\'team-card-img\' style=\'background:linear-gradient(135deg,var(--card) 0%,var(--deep) 100%);display:flex;align-items:center;justify-content:center;\'><i class=\'ri-user-3-line\' style=\'font-size:4rem;color:var(--gold-dim);\'></i></div>';"
+        />
+        <div class="team-card-gradient"></div>
+        <div class="team-card-info">
+          <div class="team-card-name">Adv. K. Rangoato</div>
+          <div class="team-card-role">Founder &amp; Principal Attorney</div>
+          <div class="team-card-spec">
+            <span class="spec-tag">Employment Law</span>
+            <span class="spec-tag">Dispute Resolution</span>
+          </div>
+        </div>
+        <div class="team-card-bio">
+          <div class="team-bio-name">Adv. K. Rangoato</div>
+          <div class="team-bio-role">Founder &amp; Principal Attorney</div>
+          <p class="team-bio-text">
+            Founder of Rangoato Law Institute and driving force behind our resolution-first
+            philosophy. Specialises in employment relations and dispute resolution with a
+            track record of efficient, client-focused outcomes.
+          </p>
+          <div class="team-bio-areas">
+            <div class="team-bio-area">Employment Relations &amp; Labour Law</div>
+            <div class="team-bio-area">Commercial Dispute Resolution</div>
+            <div class="team-bio-area">Contractual Matters</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-card">
+        <!--
+          IMAGE PLACEHOLDER — static/img/team-2.jpg
+          Professional headshot. Plain / office background.
+          Portrait crop, min 600 × 800px.
+        -->
+        <img
+          class="team-card-img"
+          src="../static/img/team-2.jpg"
+          alt="Att. T. Mokoena"
+          loading="lazy"
+          onerror="this.outerHTML='<div class=\'team-card-img\' style=\'background:linear-gradient(135deg,var(--card) 0%,var(--deep) 100%);display:flex;align-items:center;justify-content:center;\'><i class=\'ri-user-3-line\' style=\'font-size:4rem;color:var(--gold-dim);\'></i></div>';"
+        />
+        <div class="team-card-gradient"></div>
+        <div class="team-card-info">
+          <div class="team-card-name">Att. T. Mokoena</div>
+          <div class="team-card-role">Senior Associate</div>
+          <div class="team-card-spec">
+            <span class="spec-tag">Insurance Law</span>
+            <span class="spec-tag">Delictual Claims</span>
+          </div>
+        </div>
+        <div class="team-card-bio">
+          <div class="team-bio-name">Att. T. Mokoena</div>
+          <div class="team-bio-role">Senior Associate</div>
+          <p class="team-bio-text">
+            Specialises in insurance law and delictual claims, with extensive experience
+            representing both plaintiffs and defendants in complex litigation matters
+            across the Gauteng High Court.
+          </p>
+          <div class="team-bio-areas">
+            <div class="team-bio-area">Insurance Law &amp; Short-Term Claims</div>
+            <div class="team-bio-area">Delictual Liability</div>
+            <div class="team-bio-area">Personal Injury Claims</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-card">
+        <!--
+          IMAGE PLACEHOLDER — static/img/team-3.jpg
+          Professional headshot. Plain / office background.
+          Portrait crop, min 600 × 800px.
+        -->
+        <img
+          class="team-card-img"
+          src="../static/img/team-3.jpg"
+          alt="Att. L. Sithole"
+          loading="lazy"
+          onerror="this.outerHTML='<div class=\'team-card-img\' style=\'background:linear-gradient(135deg,var(--card) 0%,var(--deep) 100%);display:flex;align-items:center;justify-content:center;\'><i class=\'ri-user-3-line\' style=\'font-size:4rem;color:var(--gold-dim);\'></i></div>';"
+        />
+        <div class="team-card-gradient"></div>
+        <div class="team-card-info">
+          <div class="team-card-name">Att. L. Sithole</div>
+          <div class="team-card-role">Associate Attorney</div>
+          <div class="team-card-spec">
+            <span class="spec-tag">Matrimonial</span>
+            <span class="spec-tag">Family Law</span>
+          </div>
+        </div>
+        <div class="team-card-bio">
+          <div class="team-bio-name">Att. L. Sithole</div>
+          <div class="team-bio-role">Associate Attorney</div>
+          <p class="team-bio-text">
+            Dedicated family law practitioner with a compassionate, resolution-focused
+            approach to matrimonial disputes, divorce proceedings, maintenance matters,
+            and custody arrangements.
+          </p>
+          <div class="team-bio-areas">
+            <div class="team-bio-area">Matrimonial Disputes &amp; Divorce</div>
+            <div class="team-bio-area">Maintenance &amp; Custody</div>
+            <div class="team-bio-area">Antenuptial Contracts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CREDENTIALS ────────────────────────────────────────── -->
+  <section class="credentials-section">
+    <div class="credentials-label-col">
+      <p class="section-label reveal">Why Choose Us</p>
+      <h2 class="section-title reveal reveal-delay-1">
+        Credentials &amp;<br>
+        <em>Commitment.</em>
+      </h2>
+    </div>
+    <div class="credentials-grid">
+      <div class="credential-item reveal">
+        <i class="ri-award-line credential-icon"></i>
+        <div class="credential-title">Law Society Registered</div>
+        <div class="credential-body">All our attorneys are duly admitted and registered with the Legal Practice Council of South Africa.</div>
+      </div>
+      <div class="credential-item reveal reveal-delay-1">
+        <i class="ri-map-pin-2-line credential-icon"></i>
+        <div class="credential-title">Johannesburg Based</div>
+        <div class="credential-body">Strategically located in Gauteng with capacity to assist clients across all South African provinces.</div>
+      </div>
+      <div class="credential-item reveal reveal-delay-2">
+        <i class="ri-file-search-line credential-icon"></i>
+        <div class="credential-title">Honest Prospect Analysis</div>
+        <div class="credential-body">We assess the merits of every matter objectively, giving clients a clear view before committing to action.</div>
+      </div>
+      <div class="credential-item reveal reveal-delay-3">
+        <i class="ri-time-line credential-icon"></i>
+        <div class="credential-title">Efficient Resolution</div>
+        <div class="credential-body">Our process is designed to resolve matters as quickly and cost-effectively as the facts allow.</div>
+      </div>
+      <div class="credential-item reveal reveal-delay-4">
+        <i class="ri-customer-service-2-line credential-icon"></i>
+        <div class="credential-title">Direct Attorney Access</div>
+        <div class="credential-body">You speak directly with the attorney handling your matter — no handoffs to paralegals or call centres.</div>
+      </div>
+      <div class="credential-item reveal">
+        <i class="ri-price-tag-3-line credential-icon"></i>
+        <div class="credential-title">Transparent Fees</div>
+        <div class="credential-body">Clear, upfront fee structures with no hidden costs. You'll always know what your matter is costing.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────── -->
+  <section class="about-cta">
+    <div>
+      <p class="cta-label">Ready to begin?</p>
+      <h2 class="cta-heading">Let's discuss<br>your matter.</h2>
+    </div>
+    <a href="contact.html#book" class="btn-primary" style="background: var(--black); color: var(--gold); border: 1px solid rgba(0,0,0,0.2);">
+      <span>Schedule a Consultation</span>
+    </a>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <img src="../static/img/logo.png" alt="Rangoato Law Institute"/>
+          <div class="footer-brand-name">
+            Rangoato Law Institute
+            <span>Resolution Driven</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Tailored legal services across employment, insurance, matrimonial, delictual and contractual matters.
+          Based in Johannesburg, South Africa.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter / X"><i class="ri-twitter-x-line"></i></a>
+          <a href="mailto:info@rangoatolaw.co.za" class="social-btn" aria-label="Email"><i class="ri-mail-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Navigation</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About the Institute</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#book">Book Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Practice Areas</p>
+        <ul>
+          <li><a href="services.html#employment">Employment Relations</a></li>
+          <li><a href="services.html#delictual">Delictual Claims</a></li>
+          <li><a href="services.html#insurance">Insurance Law</a></li>
+          <li><a href="services.html#matrimonial">Matrimonial Disputes</a></li>
+          <li><a href="services.html#contracts">Contractual Matters</a></li>
+          <li><a href="services.html#dispute">Dispute Resolution</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Get In Touch</p>
+        <div class="footer-contact-item">
+          <i class="ri-map-pin-line"></i>
+          <span>Johannesburg, Gauteng<br>South Africa</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ri-phone-line"></i>
+          <span>+27 (0) 00 000 0000</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ri-mail-line"></i>
+          <span>info@rangoatolaw.co.za</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ri-time-line"></i>
+          <span>Mon – Fri: 08:00 – 17:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Rangoato Law Institute. Johannesburg, South Africa. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../static/js/main.js"></script>
+  <script>
+    // About page specific: section label class compatibility
+    document.querySelectorAll('.mission-label, .philosophy-values-title').forEach(el => {
+      if (!el.classList.contains('reveal')) el.classList.add('reveal');
+    });
+  </script>
+</body>
+</html>
