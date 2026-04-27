@@ -1,0 +1,411 @@
+/* ============================================================
+   RANGOATO LAW INSTITUTE — About Page Stylesheet
+   ============================================================ */
+
+/* ── PAGE HERO ───────────────────────────────────────────── */
+.page-hero {
+  position: relative; z-index: 1;
+  min-height: 52vh;
+  display: flex; align-items: flex-end;
+  padding: 0 5vw 5rem;
+  overflow: hidden;
+  background:
+    linear-gradient(to bottom, transparent 30%, var(--black) 100%),
+    radial-gradient(ellipse 70% 60% at 60% 0%, rgba(184,148,42,0.10) 0%, transparent 70%);
+}
+
+.page-hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background-color: var(--deep);
+  overflow: hidden;
+}
+.page-hero-bg::before {
+  content: '';
+  position: absolute; inset: -40px;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(184,148,42,0.08) 0%, transparent 65%),
+    radial-gradient(circle 400px at 90% 120%, rgba(184,148,42,0.05) 0%, transparent 60%);
+}
+.page-hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='480' font-weight='700' fill='%23b8942a' fill-opacity='0.03'%3E%C2%A7%3C/text%3E%3C/svg%3E");
+  background-size: 500px 500px;
+  background-position: right -80px center;
+  background-repeat: no-repeat;
+}
+
+.page-hero-line {
+  position: absolute; left: 5vw; top: 0;
+  width: 1px; height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(184,148,42,0.3) 40%, rgba(184,148,42,0.15) 70%, transparent);
+  animation: fadeIn 1.5s ease both;
+}
+
+.page-hero-content {
+  position: relative; z-index: 1;
+  padding-top: 100px;
+  max-width: 700px;
+}
+
+.page-breadcrumb {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.6rem;
+  animation: fadeUp 0.7s ease 0.1s both;
+}
+.page-breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.page-breadcrumb a:hover { color: var(--gold); }
+.page-breadcrumb i { font-size: 0.7rem; color: var(--muted); }
+
+.page-hero-title {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
+  font-weight: 700; line-height: 1.05;
+  color: var(--cream); letter-spacing: -0.01em;
+  animation: fadeUp 0.7s ease 0.2s both;
+}
+.page-hero-title em {
+  font-style: italic; font-weight: 300;
+  color: var(--gold); display: block;
+}
+
+.page-hero-sub {
+  margin-top: 1.2rem;
+  font-size: 1rem; color: var(--muted-light); line-height: 1.7;
+  max-width: 540px;
+  animation: fadeUp 0.7s ease 0.35s both;
+}
+
+/* ── MISSION SECTION ─────────────────────────────────────── */
+.mission-section {
+  position: relative; z-index: 1;
+  padding: 6rem 5vw;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6rem; align-items: center;
+}
+
+.mission-visual {
+  position: relative;
+}
+.mission-image-frame {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+.mission-image-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: grayscale(25%) contrast(1.05);
+  transition: filter 0.6s;
+}
+.mission-image-frame:hover img { filter: grayscale(0%) contrast(1.05); }
+
+.mission-image-frame::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(135deg, transparent 50%, rgba(6,8,15,0.6) 100%);
+}
+
+.mission-corner {
+  position: absolute; bottom: -24px; right: -24px;
+  width: 120px; height: 120px;
+  border: 1px solid var(--border-mid);
+  background: var(--card);
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 0.3rem;
+  z-index: 2;
+}
+.mission-corner-num {
+  font-family: var(--serif); font-size: 2.2rem; font-weight: 700;
+  color: var(--gold); line-height: 1;
+}
+.mission-corner-label {
+  font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); text-align: center; line-height: 1.3;
+}
+
+.mission-accent-line {
+  position: absolute; top: -24px; left: -24px;
+  width: 80px; height: 80px;
+  border-top: 1px solid var(--gold-dim);
+  border-left: 1px solid var(--gold-dim);
+}
+
+.mission-text {}
+.mission-label {
+  font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.2rem;
+}
+.mission-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-weight: 700; line-height: 1.15;
+  color: var(--cream); margin-bottom: 1.6rem;
+}
+.mission-heading em { font-style: italic; font-weight: 300; color: var(--gold-light); }
+
+.mission-body {
+  font-size: 0.93rem; color: var(--muted-light); line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.mission-pillars {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0.9rem; margin-top: 2.4rem;
+}
+.pillar-item {
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  display: flex; flex-direction: column; gap: 0.5rem;
+  transition: border-color 0.3s, background 0.3s;
+}
+.pillar-item:hover {
+  border-color: var(--border-mid);
+  background: var(--card-hover);
+}
+.pillar-item i {
+  font-size: 1.1rem; color: var(--gold);
+}
+.pillar-label {
+  font-size: 0.8rem; font-weight: 600; color: var(--cream);
+  letter-spacing: 0.03em;
+}
+.pillar-desc {
+  font-size: 0.75rem; color: var(--muted); line-height: 1.5;
+}
+
+/* ── PHILOSOPHY BANNER ───────────────────────────────────── */
+.philosophy-banner {
+  position: relative; z-index: 1;
+  padding: 6rem 5vw;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5rem; align-items: center;
+}
+.philosophy-banner::before {
+  content: '"';
+  position: absolute; left: 4vw; top: -2rem;
+  font-family: var(--serif); font-size: 22rem;
+  color: var(--gold); opacity: 0.04;
+  line-height: 1; pointer-events: none;
+  font-weight: 700;
+}
+
+.philosophy-quote-side {}
+.philosophy-quote {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+  font-weight: 400; font-style: italic;
+  color: var(--cream); line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.philosophy-quote strong { font-weight: 700; font-style: normal; color: var(--gold-light); }
+.philosophy-attr {
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--muted);
+}
+.philosophy-attr::before {
+  content: '';
+  width: 40px; height: 1px; background: var(--gold-dim);
+}
+
+.philosophy-values {}
+.philosophy-values-title {
+  font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.8rem;
+}
+.value-list {
+  display: flex; flex-direction: column; gap: 1.2rem;
+  list-style: none;
+}
+.value-item {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+.value-item:last-child { border-bottom: none; padding-bottom: 0; }
+.value-num {
+  font-family: var(--mono); font-size: 0.68rem;
+  color: var(--gold-dim); letter-spacing: 0.1em;
+  padding-top: 2px; flex-shrink: 0;
+}
+.value-name {
+  font-size: 0.88rem; font-weight: 600; color: var(--cream);
+  margin-bottom: 0.2rem;
+}
+.value-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.55; }
+
+/* ── TEAM SECTION ────────────────────────────────────────── */
+.team-section {
+  position: relative; z-index: 1;
+  padding: 6rem 5vw;
+}
+.team-header {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;
+}
+.team-header-text {}
+
+.team-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.team-card {
+  position: relative; overflow: hidden;
+  background: var(--card);
+  aspect-ratio: 3/4;
+  cursor: default;
+}
+.team-card-img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+  filter: grayscale(40%);
+  transition: filter 0.5s, transform 0.5s;
+}
+.team-card:hover .team-card-img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+.team-card-gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(6,8,15,0.95) 0%, rgba(6,8,15,0.4) 45%, transparent 75%);
+  transition: opacity 0.4s;
+}
+.team-card-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 2rem 1.6rem;
+}
+.team-card-name {
+  font-family: var(--serif); font-size: 1.2rem; font-weight: 600;
+  color: var(--cream); margin-bottom: 0.25rem;
+}
+.team-card-role {
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.8rem;
+}
+.team-card-spec {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+}
+.spec-tag {
+  font-size: 0.62rem; padding: 0.2rem 0.55rem;
+  border: 1px solid rgba(184,148,42,0.2);
+  color: var(--muted-light);
+}
+.team-card-bio {
+  position: absolute; inset: 0;
+  background: rgba(6,8,15,0.96);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 2rem;
+  opacity: 0; transition: opacity 0.4s;
+}
+.team-card:hover .team-card-bio { opacity: 1; }
+.team-bio-name {
+  font-family: var(--serif); font-size: 1.1rem; font-weight: 600;
+  color: var(--gold-light); margin-bottom: 0.2rem;
+}
+.team-bio-role {
+  font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold-dim); margin-bottom: 1rem;
+}
+.team-bio-text {
+  font-size: 0.8rem; color: var(--muted-light); line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.team-bio-areas {
+  display: flex; flex-direction: column; gap: 0.35rem;
+}
+.team-bio-area {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.73rem; color: var(--muted);
+}
+.team-bio-area::before {
+  content: '';
+  width: 18px; height: 1px; background: var(--gold-dim); flex-shrink: 0;
+}
+
+/* ── CREDENTIALS SECTION ─────────────────────────────────── */
+.credentials-section {
+  position: relative; z-index: 1;
+  padding: 5rem 5vw;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  display: grid; grid-template-columns: 1fr 2fr;
+  gap: 5rem; align-items: start;
+}
+.credentials-label-col {}
+.credentials-label-col .section-label { margin-bottom: 1rem; }
+.credentials-label-col .section-title {
+  font-family: var(--serif); font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+  font-weight: 700; color: var(--cream); line-height: 1.2;
+}
+.credentials-label-col .section-title em {
+  font-style: italic; font-weight: 300; color: var(--gold-light);
+}
+
+.credentials-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border);
+}
+.credential-item {
+  padding: 1.8rem 1.6rem;
+  background: var(--card);
+  display: flex; flex-direction: column; gap: 0.6rem;
+  transition: background 0.3s;
+}
+.credential-item:hover { background: var(--card-hover); }
+.credential-icon {
+  font-size: 1.4rem; color: var(--gold); margin-bottom: 0.2rem;
+}
+.credential-title {
+  font-size: 0.88rem; font-weight: 600; color: var(--cream);
+}
+.credential-body {
+  font-size: 0.78rem; color: var(--muted); line-height: 1.55;
+}
+
+/* ── CTA ABOUT ───────────────────────────────────────────── */
+.about-cta {
+  position: relative; z-index: 1;
+  padding: 5rem 5vw;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 3rem; flex-wrap: wrap;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  overflow: hidden;
+}
+.about-cta::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='320' font-weight='700' fill='%23000' fill-opacity='0.04'%3E§%3C/text%3E%3C/svg%3E") right -40px center / 350px no-repeat;
+  pointer-events: none;
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .mission-section { grid-template-columns: 1fr; gap: 3.5rem; }
+  .mission-visual { max-width: 480px; }
+  .philosophy-banner { grid-template-columns: 1fr; gap: 3rem; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .credentials-section { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+@media (max-width: 600px) {
+  .page-hero { min-height: 44vh; padding-bottom: 3.5rem; }
+  .page-hero-title { font-size: clamp(2.1rem, 9vw, 3rem); }
+  .mission-pillars { grid-template-columns: 1fr; }
+  .philosophy-banner { padding: 4rem 5vw; }
+  .philosophy-banner::before { font-size: 14rem; }
+  .team-grid { grid-template-columns: 1fr; }
+  .credentials-grid { grid-template-columns: 1fr; }
+  .about-cta { flex-direction: column; align-items: flex-start; }
+  .mission-corner { display: none; }
+}

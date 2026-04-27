@@ -1,0 +1,167 @@
+/* ============================================================
+   RANGOATO LAW INSTITUTE — Home Page Styles
+   ============================================================ */
+
+/* ── APPROACH SECTION ────────────────────────────────────── */
+.approach-section {
+  position: relative; z-index: 1;
+  background: var(--deep); padding: 7rem 5vw;
+  display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem;
+  align-items: start;
+}
+.approach-left {
+  position: sticky; top: 120px;
+}
+.approach-left .section-body { max-width: 100%; }
+
+.approach-steps { display: flex; flex-direction: column; gap: 0; }
+
+.approach-step {
+  display: grid; grid-template-columns: 52px 60px 1fr; gap: 1.5rem;
+  align-items: flex-start; padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s;
+  position: relative;
+}
+.approach-step:last-child { border-bottom: none; }
+.approach-step::before {
+  content: ''; position: absolute; left: -2rem; top: 0; bottom: 0;
+  width: 2px; background: transparent;
+  transition: background 0.3s;
+}
+.approach-step:hover::before { background: var(--gold); }
+
+.approach-num {
+  font-family: var(--serif); font-size: 0.75rem; font-weight: 700;
+  color: var(--gold-dim); letter-spacing: 0.08em;
+  padding-top: 0.6rem;
+}
+.approach-icon {
+  width: 52px; height: 52px; flex-shrink: 0;
+  border: 1px solid var(--border-mid);
+  display: grid; place-items: center;
+  color: var(--gold); font-size: 1.2rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+.approach-step:hover .approach-icon {
+  background: var(--gold-glow); border-color: var(--gold);
+}
+.approach-name {
+  font-family: var(--serif); font-size: 1.15rem; font-weight: 600;
+  color: var(--cream); margin-bottom: 0.5rem;
+}
+.approach-desc { font-size: 0.84rem; color: var(--muted-light); line-height: 1.75; }
+
+/* ── TESTIMONIALS SECTION ────────────────────────────────── */
+.testimonials-section {
+  position: relative; z-index: 1;
+  background: var(--card); padding: 7rem 0 5rem;
+  overflow: hidden;
+}
+.testimonials-section::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+}
+.testimonials-header {
+  padding: 0 5vw; margin-bottom: 3.5rem;
+}
+
+.testimonials-track-wrap {
+  overflow: hidden;
+  padding: 1rem 0 2rem;
+  margin: 0 5vw;
+}
+.testimonials-track {
+  display: flex; gap: 2rem;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.testimonial-card {
+  background: var(--black); padding: 2.5rem;
+  /* 3-up: 100% minus 2 gaps (2rem each) divided by 3 */
+  flex: 0 0 calc((100% - 4rem) / 3);
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-top: 2px solid transparent;
+  transition: border-top-color 0.3s, transform 0.3s;
+  position: relative;
+}
+.testimonial-card::before {
+  content: '"';
+  position: absolute; top: 1rem; right: 1.5rem;
+  font-family: var(--serif); font-size: 5rem; font-weight: 700;
+  color: rgba(184,148,42,0.06); line-height: 1; pointer-events: none;
+}
+.testimonial-card:hover {
+  border-top-color: var(--gold); transform: translateY(-4px);
+}
+.testimonial-stars {
+  display: flex; gap: 0.2rem; color: var(--gold); font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+.testimonial-quote {
+  font-family: var(--serif); font-size: 0.95rem; font-style: italic;
+  line-height: 1.8; color: var(--cream); margin-bottom: 1.8rem;
+  font-weight: 300;
+}
+.testimonial-author {
+  display: flex; align-items: center; gap: 1rem;
+  border-top: 1px solid var(--border); padding-top: 1.2rem;
+}
+.testimonial-initials {
+  width: 42px; height: 42px; flex-shrink: 0;
+  background: var(--gold-glow); border: 1px solid var(--border-mid);
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--serif); font-size: 0.85rem; font-weight: 700; color: var(--gold);
+}
+.testimonial-name {
+  font-size: 0.85rem; font-weight: 600; color: var(--cream);
+}
+.testimonial-role { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
+
+.testimonials-controls {
+  display: flex; align-items: center; justify-content: center; gap: 1.2rem;
+  padding: 0 5vw; margin-top: 2rem;
+}
+.test-arrow {
+  width: 44px; height: 44px;
+  border: 1px solid var(--border-mid); background: transparent;
+  color: var(--gold); font-size: 1.1rem;
+  display: grid; place-items: center; cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.test-arrow:hover { background: var(--gold-glow); border-color: var(--gold); }
+.test-dots { display: flex; gap: 0.5rem; }
+.test-dot {
+  width: 24px; height: 2px; background: var(--border-mid);
+  cursor: pointer; border: none; transition: background 0.3s, width 0.3s;
+}
+.test-dot.active { background: var(--gold); width: 40px; }
+
+/* ══════════════════════════════════════════════════════════
+   RESPONSIVE — TABLET (≤ 960px)
+══════════════════════════════════════════════════════════ */
+@media (max-width: 960px) {
+  .approach-section {
+    grid-template-columns: 1fr; gap: 3rem; padding: 5rem 5vw;
+  }
+  .approach-left { position: static; }
+  .approach-step { grid-template-columns: 48px 1fr; }
+  .approach-num { display: none; }
+
+  .testimonial-card { flex: 0 0 calc((100% - 2rem) / 2); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   RESPONSIVE — MOBILE (≤ 600px)
+══════════════════════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .approach-section { padding: 4rem 5vw; gap: 2.5rem; }
+  .approach-step { gap: 1rem; }
+
+  .testimonial-card { flex: 0 0 100%; }
+  .testimonials-section { padding: 4rem 0 3rem; }
+}
